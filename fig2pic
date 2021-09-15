@@ -1,0 +1,8 @@
+function fig2pic(filename, type)
+
+convert2 = type;
+new_filename = 'converted_picture';
+
+fig=openfig(filename,'new','invisible');
+saveas(fig,new_filename,convert2)
+close(fig);
